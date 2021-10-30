@@ -24,7 +24,7 @@ public class Activity_Register extends AppCompatActivity implements MvpLogin_Reg
     private EditText ambiente;
     private EditText comision;
     private EditText grupo;
-    private EditText contraseña;
+    private EditText contrasenia;
     private Button enviarInformacionDeRegistro;
     private ProgressBar progressRegistrar;
     private PresenterRegistro presenter;
@@ -41,7 +41,7 @@ public class Activity_Register extends AppCompatActivity implements MvpLogin_Reg
         ambiente = (EditText) findViewById(R.id.editTextAmbiente);
         comision = (EditText) findViewById(R.id.editTextComision);
         grupo = (EditText) findViewById(R.id.editTextGrupo);
-        contraseña = (EditText) findViewById(R.id.editTextPassword);
+        contrasenia = (EditText) findViewById(R.id.editTextPassword);
         enviarInformacionDeRegistro = (Button) findViewById(R.id.buttonRegistrar);
         progressRegistrar = (ProgressBar)findViewById(R.id.progressRegistrar);
         enviarInformacionDeRegistro.setOnClickListener(HandlerRegistro);
@@ -63,14 +63,9 @@ public class Activity_Register extends AppCompatActivity implements MvpLogin_Reg
         {
 
         JSONObject obj = presenter.getJsonObject(ambiente.getText().toString(),nombre.getText().toString(),apellido.getText().toString()
-                ,mail.getText().toString(),dni.getText().toString(),contraseña.getText().toString(),comision.getText().toString()
+                ,mail.getText().toString(),dni.getText().toString(), contrasenia.getText().toString(),comision.getText().toString()
                 ,grupo.getText().toString());
-
-            /*
-            JSONObject obj = presenter.getJsonObject("TEST","jonatan","grassi"
-                    ,"jonatangrassi22@gmail.com","40077893","12342131234","2900"
-                    ,"1");
-    */
+        
         presenter.iniciarServicio(obj);
         }
         else

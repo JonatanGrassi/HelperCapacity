@@ -25,13 +25,6 @@ public class ReceptorRespuestaServidorRefreshToken extends BroadcastReceiver {
             presenter.desregistrarBroadcastRefresh();
             presenter.reenviarRegistroEvento();
         }
-        /*
-        else
-        {
-            String msjError = intent.getExtras().getString("msjError");
-
-        }
-        */
-
+     
     }
 }

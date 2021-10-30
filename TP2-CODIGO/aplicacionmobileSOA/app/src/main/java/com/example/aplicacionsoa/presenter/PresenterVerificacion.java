@@ -46,11 +46,11 @@ public class PresenterVerificacion implements MvpVerificacion.Presenter {
 
     @Override
     public void verificarCodigoSeguridad(String codigo) {
-        // if(codigo.equals(codigoDeConfirmacion)) {
+        if(codigo.equals(codigoDeConfirmacion)) {
                    activity_verificacion.habilitarLogin();
-        //}else {
-        //    activity_verificacion.mostrarMensaje("Codigo de verificacion erroneo");
-        //}
+        }else {
+            activity_verificacion.mostrarMensaje("Codigo de verificacion erroneo");
+        }
     }
 
     @Override

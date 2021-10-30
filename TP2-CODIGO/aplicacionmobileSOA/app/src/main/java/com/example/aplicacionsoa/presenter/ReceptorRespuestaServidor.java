@@ -17,7 +17,6 @@ public class ReceptorRespuestaServidor extends BroadcastReceiver {
             {
                 String token_refresh = intent.getExtras().getString("token_refresh");
                 String token = intent.getExtras().getString("token");
-                //presenter.obtenerTokens(token_refresh,token);
                 PresenterRegistro.token_refresh = token_refresh;
                 PresenterRegistro.token = token;
                 PresenterLogin.token = token;

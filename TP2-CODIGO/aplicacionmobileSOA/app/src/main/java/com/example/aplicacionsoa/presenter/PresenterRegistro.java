@@ -71,9 +71,6 @@ public class PresenterRegistro implements MvpLogin_Registro.Presenter {
 
     @Override
     public void liberarRecursos() {
-        //if(Utilitarias.isMyServiceRunning(Http_Conection_Service_POST.class,viewRegistro)) {
-          //  viewRegistro.stopService(new Intent(viewRegistro, Http_Conection_Service_POST.class));
-        //}
        if(isRegisterBroadcast) {
            viewRegistro.unregisterReceiver(broadcast);
            isRegisterBroadcast=false;
@@ -84,18 +81,13 @@ public class PresenterRegistro implements MvpLogin_Registro.Presenter {
     public boolean comprobarConexion() {
        return Utilitarias.comprobarConexion(viewRegistro);
     }
-
-
-
+    
     @Override
     public void comunicarRespuestaExitosa() {
         preferencias.guardarRegistro();
         viewRegistro.mostrarResultadoConexion("Se ha registrado correctamente");
         viewRegistro.iniciarAplicacion();
         liberarRecursos();
-        //newIntent.putExtra("token_refresh",token_refresh);
-        //newIntent.putExtra("token",token);
-
     }
 
     @Override

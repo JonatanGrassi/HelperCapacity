@@ -12,7 +12,6 @@ public abstract class Local implements Serializable {
     {
         this.tipoDeLocal = tipoDeLocal;
         this.porcetajeAforo = porcetajeAforo;
-        //this.recomendaciones = recomendaciones;
     }
 
     public void setRecomendaciones(ArrayList<String> recomendaciones)

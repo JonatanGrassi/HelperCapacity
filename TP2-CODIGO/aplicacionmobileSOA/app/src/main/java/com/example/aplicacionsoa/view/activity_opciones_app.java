@@ -6,16 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.aplicacionsoa.R;
 import com.example.aplicacionsoa.presenter.MvpOpcionesApp;
 import com.example.aplicacionsoa.presenter.PresenterActivityOpcionesApp;
 
-import org.json.JSONObject;
 
 public class activity_opciones_app extends AppCompatActivity implements MvpOpcionesApp.View {
     private TextView nombreLocal;
