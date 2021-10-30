@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.Activity_Register">
+
+  <TextView
+      android:id="@+id/textView13"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="24dp"
+      android:text="Grupo"
+      app:layout_constraintStart_toStartOf="@+id/editTextGrupo"
+      app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+  <TextView
+      android:id="@+id/textView9"
+      android:layout_width="wrap_content"
+      android:layout_height="19dp"
+      android:layout_marginTop="70dp"
+      android:text="DNI"
+      app:layout_constraintStart_toStartOf="@+id/editTextDNI"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <EditText
+      android:id="@+id/editTextAmbiente"
+      android:layout_width="150dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="4dp"
+      android:ems="10"
+      android:hint="Ingrese Ambiente"
+      android:inputType="textPersonName"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+  <EditText
+      android:id="@+id/editTextNombre"
+      android:layout_width="150dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="5dp"
+      android:ems="10"
+      android:hint="Ingrese nombre"
+      android:inputType="text"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+  <EditText
+      android:id="@+id/editTextComision"
+      android:layout_width="150dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="5dp"
+      android:ems="10"
+      android:hint="Ingrese comision"
+      android:inputType="number"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+  <EditText
+      android:id="@+id/editTextEmail"
+      android:layout_width="0dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="5dp"
+      android:layout_marginEnd="32dp"
+      android:ems="10"
+      android:hint="Ingrese email"
+      android:inputType="textEmailAddress"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+  <EditText
+      android:id="@+id/editTextGrupo"
+      android:layout_width="150dp"
+      android:layout_height="50dp"
+      android:layout_marginTop="5dp"
+      android:layout_marginEnd="32dp"
+      android:ems="10"
+      android:hint="Ingrese grupo"
+      android:inputType="number"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+  <EditText
+      android:id="@+id/editTextDNI"
+      android:layout_width="150dp"
+      android:layout_height="50dp"
+      android:layout_marginTop="5dp"
+      android:layout_marginEnd="32dp"
+      android:ems="10"
+      android:hint="Ingrese DNI"
+      android:inputType="number"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+  <EditText
+      android:id="@+id/editTextPassword"
+      android:layout_width="0dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="5dp"
+      android:layout_marginEnd="32dp"
+      android:ems="10"
+      android:hint="Ingrese password"
+      android:inputType="textPassword"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+  <EditText
+      android:id="@+id/editTextApellido"
+      android:layout_width="150dp"
+      android:layout_height="50dp"
+      android:layout_marginTop="5dp"
+      android:layout_marginEnd="32dp"
+      android:ems="10"
+      android:hint="Ingrese apellido"
+      android:inputType="text"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+  <Button
+      android:id="@+id/buttonRegistrar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="24dp"
+      android:text="Registrar"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextComision" />
+
+  <TextView
+      android:id="@+id/textView4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="70dp"
+      android:text="Ambiente"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/textView7"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="24dp"
+      android:text="Nombre"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextAmbiente" />
+
+  <TextView
+      android:id="@+id/textView8"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="24dp"
+      android:text="Apellido"
+      app:layout_constraintStart_toStartOf="@+id/editTextApellido"
+      app:layout_constraintTop_toBottomOf="@+id/editTextDNI" />
+
+  <TextView
+      android:id="@+id/textView10"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="24dp"
+      android:text="Email"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextApellido" />
+
+  <TextView
+      android:id="@+id/textView11"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="24dp"
+      android:text="Password (min 8 caracteres)"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+  <TextView
+      android:id="@+id/textView12"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="24dp"
+      android:text="Comision"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+  <TextView
+      android:id="@+id/textView14"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:text="Registro"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <ProgressBar
+      android:id="@+id/progressRegistrar"
+      style="?android:attr/progressBarStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:visibility="invisible"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/buttonRegistrar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

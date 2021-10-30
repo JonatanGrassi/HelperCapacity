@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HelperCapacity</string>
+    <string name="Ambiente">Ambiente</string>
+    <string name="nombre">nombre</string>
+    <string name="Apellido">apellido</string>
+    <string name="dni">dni</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="comision">comision</string>
+    <string name="grupo">grupo</string>
+</resources>
