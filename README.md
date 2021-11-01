@@ -5,5 +5,6 @@
 * da recomendaciones para poder garantizar la salud de todos
 
 ### Repositorio donde se hizo el desarrollo 
-(No tiene la estructura de carpetas mencionada por la catedra por lo tanto se creo este nuevo repositorio para respetarlo)
 https://github.com/JonatanGrassi/aplicacionmobileSOA
+(No tiene la estructura de carpetas mencionada por la catedra por lo tanto se creo este nuevo repositorio para respetarlo)
+
